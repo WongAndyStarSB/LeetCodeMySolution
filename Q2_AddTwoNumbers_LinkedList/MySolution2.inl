@@ -1,5 +1,5 @@
-#ifndef ADD_TWO_NUMBERS_SOLUTION_2_INL
-#define ADD_TWO_NUMBERS_SOLUTION_2_INL
+#ifndef Q2_SOLUTION_2_INL
+#define Q2_SOLUTION_2_INL
 
 #include "AddTwoNumbers_LinkedList.hpp"
 
@@ -70,4 +70,4 @@ public:
     }
 };
 
-#endif // ADD_TWO_NUMBERS_SOLUTION_2_INL
+#endif // Q2_SOLUTION_2_INL

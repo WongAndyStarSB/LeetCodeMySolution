@@ -1,5 +1,5 @@
-#ifndef ADD_TWO_NUMBERS_CPP
-#define ADD_TWO_NUMBERS_CPP
+#ifndef Q2_CPP
+#define Q2_CPP
 
 #include <initializer_list>
 #include <stdint.h>
@@ -77,4 +77,4 @@ int main() {
     }
     return 0;
 }
-#endif // ADD_TWO_NUMBERS_CPP
+#endif // Q2_CPP

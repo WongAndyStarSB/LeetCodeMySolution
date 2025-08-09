@@ -1,5 +1,5 @@
-#ifndef ADD_TWO_NUMBERS_HPP
-#define ADD_TWO_NUMBERS_HPP
+#ifndef Q2_HPP
+#define Q2_HPP
 
 #include <initializer_list>
 #include <stdint.h>
@@ -16,4 +16,4 @@ struct ListNode {
     ListNode(int x, ListNode *next) : val(x), next(next) {}
 };
 
-#endif // ADD_TWO_NUMBERS_HPP
+#endif // Q2_HPP
