@@ -7,14 +7,7 @@
 #include <iostream>
 #include <stdexcept>
 
-// Definition for singly-linked list.
-struct ListNode {
-    int val;
-    ListNode *next;
-    ListNode() : val(0), next(nullptr) {}
-    ListNode(int x) : val(x), next(nullptr) {}
-    ListNode(int x, ListNode *next) : val(x), next(next) {}
-};
+#include "AddTwoNumbers_LinkedList.hpp"
 
 std::string linkedListToString(const ListNode* const & arg_l) {
     std::string s = "[ ";
@@ -57,7 +50,7 @@ public:
 };
 
 
-#include "MySolution2.inl"
+#include "LeetCodeSolution.inl"
 
 int main() {
     std::cout << "AddTwoNumbers\n";

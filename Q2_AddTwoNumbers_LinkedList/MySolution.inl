@@ -1,7 +1,7 @@
 #ifndef ADD_TWO_NUMBERS_SOLUTION_1_INL
 #define ADD_TWO_NUMBERS_SOLUTION_1_INL
 
-#include "AddTwoNumbers_LinkedList.cpp"
+#include "AddTwoNumbers_LinkedList.hpp"
 
 // this solution has 
 // time-complexity: --
