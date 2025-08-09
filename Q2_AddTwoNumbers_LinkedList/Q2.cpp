@@ -71,6 +71,7 @@ int main() {
         std::cout << output_str;
     } catch (std::exception& e) {
         std::cerr << e.what();
+        return 1;
     }
     return 0;
 }
