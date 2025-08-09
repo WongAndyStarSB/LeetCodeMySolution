@@ -1,13 +1,10 @@
-#ifndef Q2_CPP
-#define Q2_CPP
-
 #include <initializer_list>
 #include <stdint.h>
 #include <string>
 #include <iostream>
 #include <stdexcept>
 
-#include "AddTwoNumbers_LinkedList.hpp"
+#include "Q2.hpp"
 
 std::string linkedListToString(const ListNode* const & arg_l) {
     std::string s = "[ ";
@@ -77,4 +74,3 @@ int main() {
     }
     return 0;
 }
-#endif // Q2_CPP

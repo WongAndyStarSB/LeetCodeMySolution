@@ -1,7 +1,7 @@
 #ifndef Q2_SOLUTION_3_INL
 #define Q2_SOLUTION_3_INL
 
-#include "AddTwoNumbers_LinkedList.hpp"
+#include "Q2.hpp"
 
 /*
 * // Definition for singly-linked list.

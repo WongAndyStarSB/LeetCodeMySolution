@@ -1,7 +1,7 @@
 #ifndef Q2_SOLUTION_2_INL
 #define Q2_SOLUTION_2_INL
 
-#include "AddTwoNumbers_LinkedList.hpp"
+#include "Q2.hpp"
 
 // this solution has 
 // time-complexity: O(Max(M,N))
