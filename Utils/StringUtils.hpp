@@ -22,14 +22,14 @@ std::string arrToStr(IteratorT begin, IteratorT end) {
 }
 
 
-std::vector<std::string> getLinesFromFile(const std::string& file_name) {
+std::vector<std::string> getLinesFromFile(const std::string& file_name, const size_t& reserve_size = 10) {
     std::ifstream file(file_name);
     if (!file.is_open()) {
         throw std::system_error(errno, std::system_category(), "Failed to open file: " + file_name);
     }
     std::string line;
     std::vector<std::string> lines;
-    lines.reserve(5);
+    lines.reserve(reserve_size);
     while (std::getline(file, line)) {
         lines.emplace_back(line);
     }
