@@ -4,6 +4,7 @@
 #include <stdexcept>
 #include <fstream>
 #include <iostream>
+#include <sstream>
 
 #include "../Utils/StringUtils.hpp"
 

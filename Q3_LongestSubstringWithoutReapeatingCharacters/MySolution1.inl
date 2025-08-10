@@ -4,6 +4,8 @@
 
 #include "Q3.hpp"
 
+// brute force
+
 // time complexity: O(N^3)
 // space complexity: O(1)
 // time used: 95ms ~ 105ms
