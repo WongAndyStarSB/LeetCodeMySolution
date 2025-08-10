@@ -1,7 +1,7 @@
 #ifndef Q2_SOLUTION_1_INL
 #define Q2_SOLUTION_1_INL
 
-#include "Q2.hpp"
+#include "Q2_ListNode.hpp"
 
 // this solution has 
 // time-complexity: --
