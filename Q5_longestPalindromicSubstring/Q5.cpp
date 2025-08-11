@@ -1,13 +1,13 @@
-#define Q4_CPP
+#define Q5_CPP
 
 #include <sstream>
 #include <iostream>
 
 
-#include "Q4.hpp"
+#include "Q5.hpp"
 #include "../Utils/Utils.hpp"
 
-#if Q4_HPP_VALID_SOURCE
+#if Q5_HPP_VALID_SOURCE
 
 int main() {
     try {
@@ -15,8 +15,6 @@ int main() {
         std::stringstream ss;
         Question tc[TEST_CASES_LEN];
         std::copy(TEST_CASES, TEST_CASES + TEST_CASES_LEN, tc);
-
-        // std::cout << StringUtils::arrToStr(tc, (tc+TEST_CASES_LEN), Question::staticToString);
         
         for (size_t i = 0; i < TEST_CASES_LEN; ++i) {
             ss << tc[i].QAtoString(tc[i].solve(solution)) << "\n";
@@ -28,5 +26,5 @@ int main() {
     }
 }
 
-#endif // Q4_HPP_VALID_SOURCE
+#endif // Q5_HPP_VALID_SOURCE
 #undef THINGS_DEFINED

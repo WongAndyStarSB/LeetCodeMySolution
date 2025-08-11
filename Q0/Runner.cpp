@@ -1,11 +1,13 @@
+#define GENERAL_RUNNER_CPP
+
 #include <sstream>
 #include <iostream>
-
 
 #include "QuestionHeader.hpp"
 #include "Solution.hpp"
 #include "../Utils/Utils.hpp"
 
+#if THINGS_DEFINED
 
 int main() {
     try {
@@ -25,3 +27,12 @@ int main() {
         std::cerr << e.what();
     }
 }
+
+#else
+
+int main() { 
+    return 0; 
+}
+
+#endif // THINGS_DEFINED
+#undef THINGS_DEFINED

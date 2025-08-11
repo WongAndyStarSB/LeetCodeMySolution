@@ -1,6 +1,7 @@
-#ifndef Q4_SOLUTION_1_HPP
-#define Q4_SOLUTION_1_HPP
+#ifndef Q4_SOLUTION_HPP
+#define Q4_SOLUTION_HPP
 
+// MySolution1
 
 // time complexity: O(M+N)
 // space complexity: O(1)
@@ -54,4 +55,4 @@ public:
     }
 };
 
-#endif //Q4_SOLUTION_1_HPP
+#endif // Q4_SOLUTION_HPP

@@ -1,5 +1,5 @@
-#ifndef Q4_HPP
-#define Q4_HPP
+#ifndef Q5_HPP
+#define Q5_HPP
 
 
 #include <vector>
@@ -8,21 +8,22 @@
 #include "../Utils/StringUtils.hpp"
 
 
-#ifdef Q4_CPP
+#ifdef Q5_CPP
     #include "LeetCodeSolution.hpp"
-    #define Q4_HPP_VALID_SOURCE 1
+    #define Q5_HPP_VALID_SOURCE 1
     #define THINGS_DEFINED 1
 #else
 #ifdef GENERAL_RUNNER_CPP
     #include "../Q0/Solution.hpp"
-    #define Q4_HPP_VALID_SOURCE 1
+    #define Q5_HPP_VALID_SOURCE 1
     #define THINGS_DEFINED 1
 #else 
-    #define Q4_HPP_VALID_SOURCE 0
+    #define Q5_HPP_VALID_SOURCE 0
     #define THINGS_DEFINED 0
 #endif
 #endif
-#if Q4_HPP_VALID_SOURCE
+
+#if Q5_HPP_VALID_SOURCE
 
 class Question {
 
@@ -57,6 +58,6 @@ public:
 
 #include "TestCases.hpp"
 
-#endif // Q4_HPP_VALID_SOURCE
+#endif // Q5_HPP_VALID_SOURCE
 
-#endif //Q4_HPP
+#endif //Q5_HPP
