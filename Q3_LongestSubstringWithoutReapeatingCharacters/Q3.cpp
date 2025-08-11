@@ -9,12 +9,12 @@
 #include "../Utils/StringUtils.hpp"
 
 
-#include "MySolution2.inl"
+#include "MySolution2.hpp"
 
 int main() {
     try {
         Solution solution;
-        std::vector<std::string> qs = getLinesFromFile("Q3strings.txt");
+        std::vector<std::string> qs = StringUtils::getLinesFromFile("Q3strings.txt");
         std::vector<int> anss = {};
         anss.reserve(qs.size());
         for (size_t i = 0; i < qs.size(); ++i) {

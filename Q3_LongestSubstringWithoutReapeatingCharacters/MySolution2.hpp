@@ -1,5 +1,5 @@
-#ifndef Q3_SOLUTION_2_INL
-#define Q3_SOLUTION_2_INL
+#ifndef Q3_SOLUTION_2_HPP
+#define Q3_SOLUTION_2_HPP
 
 
 #include "Q3.hpp"
@@ -40,4 +40,4 @@ public:
     }
 };
 
-#endif // Q3_SOLUTION_2_INL
+#endif // Q3_SOLUTION_2_HPP

@@ -5,14 +5,18 @@
 #include <string>
 #include <sstream>
 #include <fstream>
+#include <functional>
 
-template <typename IteratorT>
-std::string arrToStr(IteratorT begin, IteratorT end) {
+namespace StringUtils {
+
+
+template <typename IteratorT, typename ConverterT = std::function<std::string(decltype(*std::declval<IteratorT>()))>>
+std::string arrToStr(IteratorT begin, IteratorT end, ConverterT converter = [](const auto& item) { return std::to_string(item); }) {
     if (begin == end) return "[ ]\n";
     std::ostringstream oss;
     oss << "[ ";
     for (IteratorT it = begin; it != end; ++it) {
-        oss << *it;
+        oss << converter(*it);
         if (std::next(it) != end) {
             oss << ", ";
         }
@@ -35,6 +39,8 @@ std::vector<std::string> getLinesFromFile(const std::string& file_name, const si
     }
     file.close();
     return lines;
+}
+
 }
 
 #endif
