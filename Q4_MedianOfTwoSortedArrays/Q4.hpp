@@ -9,7 +9,7 @@
 
 
 #ifdef Q4_CPP
-    #include "LeetCodeSolution.hpp"
+    #include "MySolution2.hpp"
     #define Q4_HPP_VALID_SOURCE 1
     #define THINGS_DEFINED 1
 #else
