@@ -16,8 +16,6 @@ using namespace std;
 
 class Solution {
 public:
-    class Solution {
-public:
     string longestPalindrome(string s) {
         int size = s.size() ;
         for (int l = size; l > 0; l--) {
@@ -30,17 +28,12 @@ public:
                     }
                 }
                 if (is_pldmic) {
-                    std::string pld_s;
-                    for (int j = i; j < i+l; ++j) {
-                        pld_s += s[j] ;
-                    }
-                    return pld_s;
+                    return s.substr(i, l);
                 }
             }
         }
         throw;
     }
-};
 };
 
 #endif // Q5_SOLUTION_HPP
