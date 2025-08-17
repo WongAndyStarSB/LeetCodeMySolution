@@ -5,8 +5,8 @@
 
 // time complexity: 
 // space complexity: 
-// time used: 
-// space used: 
+// time used: 105ms ~ 110ms 
+// space used: 9.0MB ~ 10.0MB
 
 #include <vector>
 #include <stdexcept>
