@@ -9,7 +9,7 @@
 
 
 #ifdef Q5_CPP
-    #include "LeetCodeSolution.hpp"
+    #include "Manacher's_Algorithm.hpp"
     #define Q5_HPP_VALID_SOURCE 1
     #define THINGS_DEFINED 1
 #else
@@ -28,27 +28,25 @@
 class Question {
 
 private:
-    std::vector<int> nums1;
-    std::vector<int> nums2;
+    std::string m_s;
 public:
     inline explicit Question() {}
 
     inline explicit Question(
-        const std::initializer_list<int>& il1, const std::initializer_list<int>& il2
-    ) : nums1(il1), nums2(il2) 
+        std::string s
+    ) : m_s(s) 
     {}
-    double solve(Solution& solution) {
-        return solution.findMedianSortedArrays(nums1, nums2);
+    std::string solve(Solution& solution) {
+        return solution.longestPalindrome(m_s);
     }
     std::string toString() const {
         return 
             "q:\n" 
-            + StringUtils::arrToStr(nums1.begin(), nums1.end()) 
-            + StringUtils::arrToStr(nums2.begin(), nums2.end())
+            + m_s + "\n"
         ;
     }
-    std::string QAtoString(double ans) const {
-        return toString() + "ans:\n" + std::to_string(ans) + "\n";
+    std::string QAtoString(std::string ans) const {
+        return toString() + "ans:\n" + ans + "\n";
     }
 
     static std::string staticToString(const Question& q) {
