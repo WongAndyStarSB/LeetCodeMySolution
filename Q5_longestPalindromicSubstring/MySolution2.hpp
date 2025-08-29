@@ -1,7 +1,7 @@
 #ifndef Q5_SOLUTION_HPP
 #define Q5_SOLUTION_HPP
 
-// MySolution1
+// MySolution2  (LeetCodeEditorial_1)
 
 // time complexity: O(N^3)
 // space complexity: O(1) // not counting answer
