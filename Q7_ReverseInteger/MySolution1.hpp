@@ -27,8 +27,9 @@ public:
 //              || (result == MAX_DIV_TEN && div_result.rem > 7)
                 || result < -MAX_DIV_TEN 
 //              || (result == -MAX_DIV_TEN && div_result.rem < -8)
-            )
-                return 0;
+            ) { 
+                return 0; 
+            }
             result = result * 10 + div_result.rem;
         }
         return result;
